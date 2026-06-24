@@ -1,11 +1,11 @@
 import Header from "./components/Header"
-import { features } from "./data/features"
+import Hero from "./components/Hero"
 
 function App() {
-  const texto = 'text-blue-400'
   return (
     <>
       <Header />
+      <Hero />
     </>
   )
 }
