@@ -13,7 +13,7 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { label: "Ínicio", href: "#home" },
+    { label: "Início", href: "#home" },
     { label: "Sobre", href: "#about" },
     { label: "Skills", href: "#skills" },
     { label: "Projetos", href: "#projects" },
