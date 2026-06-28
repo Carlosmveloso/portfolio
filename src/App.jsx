@@ -1,10 +1,11 @@
-import { features } from "./data/features"
+import Header from "./components/Header"
+import Hero from "./components/Hero"
 
 function App() {
-  const texto = 'text-blue-400'
   return (
     <>
-      <h1 className={`${texto}`}>Teste</h1>
+      <Header />
+      <Hero />
     </>
   )
 }

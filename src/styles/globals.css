@@ -1,1 +1,117 @@
-@import "tailwindcss"
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /*Fontes*/
+  --font-head: "Space Grotesk", Arial, Helvetica, sans-serif;
+  --font-body: "Inter", Arial, Helvetica, sans-serif;
+
+  /* Dark theme */
+  --color-background: #040711; /*Fundo principal do site em dark mode*/
+  --color-foreground: #edf2f8; /*TExto principal em dark mode*/
+  --color-card: #0b111f; /*Cards, header glass e superfícies*/
+  --color-primary: #7f9dff; /*Focus ring e elemento primário semântico*/
+  --color-muted-secundary: #141a29; /*Faixas alternativas e chips*/
+  --color-muted-foreground: #8e99ab; /*Texto secundários*/
+  --color-accent: #00d1da; /*Ênfase ciano e feedback*/
+  --color-destructive: #f94144; /*Erro em dark mode*/
+  --color-blue: #33a2ff; /*Gradiente dark*/
+  --color-purple: #a980ff; /*Gradiente dark e glow*/
+  --color-cyan: #00dfe8; /*Gradiente dark e status online*/
+  --glass-bg: #0b111f8c;
+  --glass-border: #ffffff1a;
+
+  /*Gradientes*/
+  --background-image-gradient-hero:
+    radial-gradient(ellipse at 20% 0%, #0056dc73, transparent 50%),
+    radial-gradient(ellipse at 80% 30%, #6800ce66, transparent 50%),
+    radial-gradient(ellipse at 50% 100%, #00848b4d, transparent 60%);
+  --background-image-gradient-primary: linear-gradient(
+    135deg,
+    #33a2ff,
+    #a980ff,
+    #00dfe8
+  );
+
+  /*Shadows*/
+  --shadow-elegant: 0 25px 60px -20px rgb(0 0 0 / 60%);
+}
+
+.light {
+  --radius: 0.75rem;
+  --color-background: #f9fcff;
+  --color-foreground: #0a121f;
+  --color-card: #fff;
+  --color-card-foreground: #0a121f;
+  --color-primary: #445def;
+  --color-primary-foreground: #fcfcfc;
+  --color-secondary: #eef2f9;
+  --color-secondary-foreground: #0e1624;
+  --color-muted: #eef2f9;
+  --color-muted-foreground: #5d646f;
+  --color-accent: #00b1d8;
+  --color-accent-foreground: #050b18;
+  --color-destructive: #f52027;
+  --color-destructive-foreground: #fcfcfc;
+  --color-border: #dadee5;
+  --color-input: #dadee5;
+  --color-ring: #445def;
+  --color-blue: #0092fb;
+  --color-purple: #9051fc;
+  --color-cyan: #00d1db;
+  --glass-bg: #fff9;
+  --glass-border: #dadee599;
+  --background-image-gradient-hero:
+    radial-gradient(ellipse at 20% 0%, #33a2ff40, transparent 50%),
+    radial-gradient(ellipse at 80% 30%, #9051fc40, transparent 50%),
+    radial-gradient(ellipse at 50% 100%, #00d1db33, transparent 60%);
+  --background-image-gradient-primary: linear-gradient(
+    135deg,
+    #0092fb,
+    #9051fc,
+    #00d1db
+  );
+  --shadow-glow: 0 10px 40px -10px #9051fc59;
+  --shadow-elegant: 0 20px 50px -20px #0b2b5f40;
+}
+
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(14px);
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate(0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+.animate-blob {
+  animation: blob 18s ease-in-out infinite;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-up {
+  animation: fade-up 0.7s ease-in-out both;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
