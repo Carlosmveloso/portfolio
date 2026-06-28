@@ -12,10 +12,12 @@
   --color-foreground: #edf2f8; /*TExto principal em dark mode*/
   --color-card: #0b111f; /*Cards, header glass e superfícies*/
   --color-primary: #7f9dff; /*Focus ring e elemento primário semântico*/
+  --color-primary-foreground: #020511;
   --color-muted-secundary: #141a29; /*Faixas alternativas e chips*/
   --color-muted-foreground: #8e99ab; /*Texto secundários*/
   --color-accent: #00d1da; /*Ênfase ciano e feedback*/
   --color-destructive: #f94144; /*Erro em dark mode*/
+  --color-border: #ffffff14;
   --color-blue: #33a2ff; /*Gradiente dark*/
   --color-purple: #a980ff; /*Gradiente dark e glow*/
   --color-cyan: #00dfe8; /*Gradiente dark e status online*/
@@ -36,6 +38,7 @@
 
   /*Shadows*/
   --shadow-elegant: 0 25px 60px -20px rgb(0 0 0 / 60%);
+  --shadow-glow: 0 10px 50px -10px #a980ff80;
 }
 
 .light {
@@ -54,7 +57,7 @@
   --color-accent-foreground: #050b18;
   --color-destructive: #f52027;
   --color-destructive-foreground: #fcfcfc;
-  --color-border: #dadee5;
+  --border: #dadee5;
   --color-input: #dadee5;
   --color-ring: #445def;
   --color-blue: #0092fb;

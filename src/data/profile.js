@@ -3,7 +3,7 @@ export const profile = {
   role: "Desenvolvedor Front-end",
   location: "João Pessoa, PB, Brasil",
   area: "Front-end",
-  level: 'Junior',
+  level: "Júnior",
   availability: "Emprego, Freelancer e Projetos",
   stack: ["React", "JavaScript", "Tailwind CSS", "Node.js"],
   bio: "Sou um desenvolvedor front-end em evolução, focado em criar interfaces modernas, responsivas e bem estruturadas usando React, JavaScript e Tailwind CSS. Pronto para novas oportunidades, freelancers e projetos reais.",
