@@ -58,12 +58,12 @@ export const translations = {
         "farol-pitimbu": {
           title: "Farol Pitimbu",
           description:
-            "Projeto para melhorar o ecossistema de vendas de Pitimbu",
+            "Plataforma para organização econômica e desenvolvimento de Pitimbu. Laboratório operacional da NortCity.",
         },
         clothing: {
           title: "Clothing",
           description:
-            "Projeto feito em grupo, quando participei de um curso no Senac",
+            "Projeto desenvolvido de forma colaborativa durante formação prática no Senac.",
         },
       },
     },
