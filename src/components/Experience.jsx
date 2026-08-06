@@ -1,4 +1,4 @@
-import { timelineYears } from "../data/timeline";
+import { timelineItems } from "../data/timeline";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../data/translations";
 import Eyebrow from "./ui/Eyebrow";
@@ -23,12 +23,12 @@ function Experience() {
         <ol className="relative">
           <div className="absolute top-0 bottom-0 left-4 w-px bg-gradient-primary opacity-40 md:left-1/2" />
           <div className="space-y-10">
-            {timelineYears.map((year, index) => {
-              const item = t.experience.items[year];
+            {timelineItems.map((id, index) => {
+              const item = t.experience.items[id];
               const isEven = index % 2 === 0;
               return (
                 <li
-                  key={year}
+                  key={id}
                   className={`relative md:grid md:grid-cols-2 md:gap-12 ${
                     isEven ? "" : "md:[&>*:first-child]:col-start-2"
                   }`}
@@ -39,7 +39,7 @@ function Experience() {
                     }`}
                   >
                     <span className="inline-block text-xs font-bold uppercase tracking-widest text-accent">
-                      {year}
+                      {item.year}
                     </span>
                     <h3 className="mt-1 font-head text-lg font-bold text-foreground">
                       {item.title}

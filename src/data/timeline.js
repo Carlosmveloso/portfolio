@@ -1,1 +1,8 @@
-export const timelineYears = [2022, 2024, 2025, 2026];
+export const timelineItems = [
+  "unipe-ads",
+  "fabrica-software",
+  "javascript",
+  "projetos",
+  "engenharia-software",
+  "busca-oportunidade",
+];

@@ -72,23 +72,41 @@ export const translations = {
       headingPrefix: "Minha",
       headingHighlight: "jornada",
       items: {
-        2022: {
+        "unipe-ads": {
+          year: "2022",
           title: "Início da minha jornada",
           description:
-            "Comecei meu curso de Análise e Desenvolvimento de sistemas",
+            "Comecei o curso de Análise e Desenvolvimento de Sistemas na Unipê.",
         },
-        2024: {
+        "fabrica-software": {
+          year: "2024",
+          title: "Fábrica de Software",
+          description:
+            "Participei da Fábrica de Software, desenvolvendo em equipe soluções reais para empresas, como um estágio.",
+        },
+        javascript: {
+          year: "2024",
           title: "Aprofundamento em JavaScript",
           description:
-            "Depois da faculdade, encontrei uma linguagem ao qual me identifiquei.",
+            "Depois da faculdade, escolhi focar em Front-end e JavaScript, complementando com um curso na Udemy e o curso de Programador Web no Senac (HTML, CSS, JavaScript, PHP e MySQL).",
         },
-        2025: {
+        projetos: {
+          year: "2025",
           title: "Meus primeiros projetos",
-          description: "Meu primeiro projeto Farol Pitimbu",
+          description:
+            "Período de colocar a mão na massa, desenvolvendo alguns projetos e aplicando tudo o que vinha aprendendo.",
         },
-        2026: {
-          title: "Me aprofundando nos conhecimentos",
-          description: "Fiz Senac e outras coisas",
+        "engenharia-software": {
+          year: "2026",
+          title: "Engenharia de Software",
+          description:
+            "Iniciei o curso de Engenharia de Software na Unipê, aprofundando ainda mais meus conhecimentos.",
+        },
+        "busca-oportunidade": {
+          year: "2026",
+          title: "Em busca da próxima etapa",
+          description:
+            "Agora em busca de uma oportunidade como estagiário ou desenvolvedor júnior para colocar em prática tudo o que aprendi.",
         },
       },
     },
@@ -218,23 +236,41 @@ export const translations = {
       headingPrefix: "My",
       headingHighlight: "journey",
       items: {
-        2022: {
+        "unipe-ads": {
+          year: "2022",
           title: "The start of my journey",
           description:
-            "Started my degree in Systems Analysis and Development",
+            "Started my degree in Systems Analysis and Development at Unipê.",
         },
-        2024: {
+        "fabrica-software": {
+          year: "2024",
+          title: "Software Factory",
+          description:
+            "Joined the Software Factory, building real solutions for companies in a team, similar to an internship.",
+        },
+        javascript: {
+          year: "2024",
           title: "Diving deeper into JavaScript",
           description:
-            "After college, I found a language I really connected with.",
+            "After college, I chose to focus on Front-end and JavaScript, complementing it with a Udemy course and the Web Developer program at Senac (HTML, CSS, JavaScript, PHP and MySQL).",
         },
-        2025: {
+        projetos: {
+          year: "2025",
           title: "My first projects",
-          description: "My first project, Farol Pitimbu",
+          description:
+            "A hands-on period, building several projects and applying everything I had been learning.",
         },
-        2026: {
-          title: "Deepening my knowledge",
-          description: "Completed a Senac course and more",
+        "engenharia-software": {
+          year: "2026",
+          title: "Software Engineering",
+          description:
+            "Started a degree in Software Engineering at Unipê, deepening my knowledge even further.",
+        },
+        "busca-oportunidade": {
+          year: "2026",
+          title: "Looking for the next step",
+          description:
+            "Now looking for an opportunity as an intern or junior developer to put everything I've learned into practice.",
         },
       },
     },
