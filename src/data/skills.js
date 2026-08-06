@@ -1,18 +1,24 @@
+import { Code2, Server, GitBranch, Wrench } from "lucide-react";
+
 export const skills = [
   {
-    category: "Front-end",
+    id: "frontend",
+    icon: Code2,
     items: ["HTML", "CSS", "JavaScript", "React"],
   },
   {
-    category: "Back-end",
+    id: "backend",
+    icon: Server,
     items: ["Node.js"],
   },
   {
-    category: "Versionamento",
+    id: "versioning",
+    icon: GitBranch,
     items: ["Git", "GitHub"],
   },
   {
-    category: "Ferramentas",
+    id: "tools",
+    icon: Wrench,
     items: ["VS Code", "Figma", "ChatGPT", "Codex", "Trello"],
   },
 ];
