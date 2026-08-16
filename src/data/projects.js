@@ -1,13 +1,13 @@
-import farolPitimbu from "../assets/images/farol-pitimbu.png";
+import farolPitimbu from "../assets/images/farol-pitimbu.jpg";
 import clothing from "../assets/images/clothing.png";
 
 export const projects = [
   {
     id: "farol-pitimbu",
     image: farolPitimbu,
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["React", "Vite", "Tailwind CSS"],
     linkUrl: "https://farolpitimbu.com.br/",
-    githubUrl: "https://github.com/Carlosmveloso/FarolPitimbu2.1",
+    githubUrl: "https://github.com/Carlosmveloso/nortcity",
   },
   {
     id: "clothing",

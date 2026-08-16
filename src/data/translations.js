@@ -58,7 +58,7 @@ export const translations = {
         "farol-pitimbu": {
           title: "Farol Pitimbu",
           description:
-            "Plataforma para organização econômica e desenvolvimento de Pitimbu. Laboratório operacional da NortCity.",
+            "Nova versão da plataforma que reúne passeios, gastronomia, hospedagem e serviços locais de Pitimbu em um só lugar. Laboratório operacional da NortCity.",
         },
         clothing: {
           title: "Clothing",
@@ -223,7 +223,8 @@ export const translations = {
       items: {
         "farol-pitimbu": {
           title: "Farol Pitimbu",
-          description: "Project to improve Pitimbu's sales ecosystem",
+          description:
+            "New version of the platform that brings together tours, food, lodging and local services in Pitimbu in one place. NortCity's operational lab.",
         },
         clothing: {
           title: "Clothing",
