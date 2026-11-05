@@ -1,32 +1,59 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-const LanguageContext = createContext(null);
+import en from "../i18n/en";
+import pt from "../i18n/pt";
+import { LanguageContext } from "./languageContext";
+
+const STORAGE_KEY = "language";
+const translations = { pt, en };
+
+function readSavedLanguage() {
+  try {
+    return localStorage.getItem(STORAGE_KEY);
+  } catch {
+    return null;
+  }
+}
+
+function saveLanguage(language) {
+  try {
+    localStorage.setItem(STORAGE_KEY, language);
+  } catch {
+    // Navegador bloqueou o armazenamento: a escolha vale só nesta visita.
+  }
+}
+
+function getInitialLanguage() {
+  const saved = readSavedLanguage();
+  if (saved === "pt" || saved === "en") return saved;
+
+  // Robôs de busca renderizam em inglês; o site deve ser indexado em português.
+  if (/bot|crawler|spider/i.test(navigator.userAgent)) return "pt";
+
+  return navigator.language.toLowerCase().startsWith("pt") ? "pt" : "en";
+}
 
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState(() => {
-    return localStorage.getItem("language") === "en" ? "en" : "pt";
-  });
+  const [language, setLanguage] = useState(getInitialLanguage);
+  const t = translations[language];
 
   useEffect(() => {
     document.documentElement.lang = language === "pt" ? "pt-BR" : "en";
-    localStorage.setItem("language", language);
-  }, [language]);
+    document.title = t.meta.title;
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", t.meta.description);
+  }, [language, t]);
 
   function toggleLanguage() {
-    setLanguage((current) => (current === "pt" ? "en" : "pt"));
+    const next = language === "pt" ? "en" : "pt";
+    setLanguage(next);
+    saveLanguage(next);
   }
 
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage }}>
+    <LanguageContext.Provider value={{ language, t, toggleLanguage }}>
       {children}
     </LanguageContext.Provider>
   );
-}
-
-export function useLanguage() {
-  const context = useContext(LanguageContext);
-  if (!context) {
-    throw new Error("useLanguage must be used within a LanguageProvider");
-  }
-  return context;
 }

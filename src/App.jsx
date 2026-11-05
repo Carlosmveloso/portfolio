@@ -1,3 +1,4 @@
+import SkipLink from "./components/SkipLink"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import About from "./components/About"
@@ -11,14 +12,17 @@ import Footer from "./components/Footer"
 function App() {
   return (
     <>
+      <SkipLink />
       <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Differentiators />
-      <Contact />
+      <main id="conteudo">
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Differentiators />
+        <Contact />
+      </main>
       <Footer />
     </>
   )
