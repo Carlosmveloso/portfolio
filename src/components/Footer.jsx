@@ -1,10 +1,8 @@
 import { useLanguage } from "../hooks/useLanguage";
-import { translations } from "../data/translations";
 import Monograma from "./ui/Monograma";
 
 function Footer() {
-  const { language } = useLanguage();
-  const t = translations[language];
+  const { t } = useLanguage();
 
   return (
     <footer className="border-t-2 border-linha py-10">

@@ -1,11 +1,9 @@
 import { skills } from "../data/skills";
 import { useLanguage } from "../hooks/useLanguage";
-import { translations } from "../data/translations";
 import SectionHeading from "./ui/SectionHeading";
 
 function Skills() {
-  const { language } = useLanguage();
-  const t = translations[language];
+  const { t } = useLanguage();
 
   return (
     <section id="skills" className="secao">

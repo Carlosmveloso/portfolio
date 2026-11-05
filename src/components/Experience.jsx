@@ -1,11 +1,9 @@
 import { timelineItems } from "../data/timeline";
 import { useLanguage } from "../hooks/useLanguage";
-import { translations } from "../data/translations";
 import SectionHeading from "./ui/SectionHeading";
 
 function Experience() {
-  const { language } = useLanguage();
-  const t = translations[language];
+  const { t } = useLanguage();
 
   return (
     <section id="trajetoria" className="secao">

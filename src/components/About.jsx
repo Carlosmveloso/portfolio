@@ -1,10 +1,8 @@
 import { useLanguage } from "../hooks/useLanguage";
-import { translations } from "../data/translations";
 import SectionHeading from "./ui/SectionHeading";
 
 function About() {
-  const { language } = useLanguage();
-  const t = translations[language];
+  const { t } = useLanguage();
 
   return (
     <section id="sobre" className="secao">

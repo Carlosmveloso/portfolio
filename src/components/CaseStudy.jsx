@@ -39,7 +39,7 @@ function CaseStudy({ content, closeLabel, isOpen, panelRef, onClose }) {
           <div>
             <h4 className="text-xl">{content.stackTitle}</h4>
             <ul className="mt-3 flex flex-wrap gap-2">
-              {farol.caseStudyStack.map((tech) => (
+              {content.stack.map((tech) => (
                 <li key={tech} className="etiqueta">
                   {tech}
                 </li>

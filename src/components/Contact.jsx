@@ -1,6 +1,5 @@
 import { Mail, Send } from "lucide-react";
-import { useState, useEffect } from "react";
-import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 import { profile } from "../data/profile";
 import { navigation } from "../data/navigation";
@@ -11,12 +10,10 @@ import {
   WhatsappIcon,
 } from "./icons/BrandIcons";
 import { useLanguage } from "../hooks/useLanguage";
-import { translations } from "../data/translations";
 import SectionHeading from "./ui/SectionHeading";
 
 function Contact() {
-  const { language } = useLanguage();
-  const t = translations[language];
+  const { t } = useLanguage();
 
   const contactLinks = [
     { icon: WhatsappIcon, label: "WhatsApp", href: navigation.whatsapp },
@@ -30,10 +27,6 @@ function Contact() {
   const [loading, setLoading] = useState(false);
   const [feedback, setFeedback] = useState(null);
 
-  useEffect(() => {
-    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-  }, []);
-
   function handleChange(event) {
     const { name, value } = event.target;
     setForm((current) => ({ ...current, [name]: value }));
@@ -45,6 +38,9 @@ function Contact() {
     setFeedback(null);
 
     try {
+      // Importado só no envio: a biblioteca lê o localStorage ao carregar e
+      // derrubaria o site inteiro em navegadores que bloqueiam o armazenamento.
+      const { default: emailjs } = await import("@emailjs/browser");
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
@@ -53,7 +49,8 @@ function Contact() {
           from_email: form.email,
           message: form.message,
           to_email: profile.social.email,
-        }
+        },
+        { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY },
       );
 
       setFeedback({ type: "success", message: t.contact.successMessage });

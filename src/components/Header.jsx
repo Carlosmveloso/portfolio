@@ -2,14 +2,12 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import { useLanguage } from "../hooks/useLanguage";
-import { translations } from "../data/translations";
 import Monograma from "./ui/Monograma";
 
 const sectionIds = ["inicio", "sobre", "skills", "projetos", "trajetoria", "contato"];
 
 function Header() {
-  const { language, toggleLanguage } = useLanguage();
-  const t = translations[language];
+  const { language, t, toggleLanguage } = useLanguage();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("inicio");

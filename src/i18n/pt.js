@@ -1,4 +1,9 @@
 const pt = {
+  meta: {
+    title: "Carlos Eduardo — Desenvolvedor Front-end",
+    description:
+      "Desenvolvedor front-end em João Pessoa. Sites e plataformas em React para negócios locais. Criador do Farol Pitimbu.",
+  },
   nav: {
     home: "Início",
     about: "Sobre",
@@ -112,6 +117,14 @@ const pt = {
       resultTitle: "Resultado",
       result: "97 negócios cadastrados, no ar desde maio de 2025 e em evolução contínua.",
       stackTitle: "Stack",
+      stack: [
+        "React",
+        "React Router",
+        "Vite",
+        "Tailwind CSS v4",
+        "Supabase (PostgreSQL, Auth, Storage, funções)",
+        "Vercel",
+      ],
       galleryTitle: "Galeria",
       gallery: {
         home: "Página inicial do Farol Pitimbu, com a busca e as categorias de negócios",
@@ -207,5 +220,4 @@ const pt = {
   },
 };
 
-// A versão em inglês entra na Fase 4.
-export const translations = { pt, en: pt };
+export default pt;

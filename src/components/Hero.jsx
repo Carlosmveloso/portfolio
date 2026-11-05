@@ -2,13 +2,16 @@ import { ArrowRight } from "lucide-react";
 
 import { navigation } from "../data/navigation";
 import { useLanguage } from "../hooks/useLanguage";
-import { translations } from "../data/translations";
 import Eyebrow from "./ui/Eyebrow";
 import Titulo from "./ui/Titulo";
 
 function Hero() {
-  const { language } = useLanguage();
-  const t = translations[language];
+  const { language, t } = useLanguage();
+
+  const resumeUrl =
+    language === "en" && import.meta.env.VITE_HAS_RESUME_EN
+      ? "/resume-carlos-eduardo.pdf"
+      : "/curriculo-carlos-eduardo.pdf";
 
   return (
     <section id="inicio" className="flex items-center md:min-h-[calc(100svh-4.5rem)]">
@@ -33,7 +36,7 @@ function Hero() {
         </div>
 
         <p className="mt-6">
-          <a href="/curriculo-carlos-eduardo.pdf" download className="link-texto">
+          <a href={resumeUrl} download className="link-texto">
             {t.hero.ctaResume}
           </a>
         </p>

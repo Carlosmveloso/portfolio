@@ -2,14 +2,6 @@ export const farol = {
   siteUrl: "https://farolpitimbu.com.br",
   mockup: "/projetos/farol/home.webp",
   technologies: ["React", "Vite", "Tailwind CSS", "Supabase", "Leaflet"],
-  caseStudyStack: [
-    "React",
-    "React Router",
-    "Vite",
-    "Tailwind CSS v4",
-    "Supabase (PostgreSQL, Auth, Storage, funções)",
-    "Vercel",
-  ],
   gallery: ["home", "mapa", "negocio", "cupom", "admin"],
 };
 

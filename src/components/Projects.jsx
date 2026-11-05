@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import { clothing, farol, upcomingProjects } from "../data/projects";
 import { GithubIcon } from "./icons/BrandIcons";
 import { useLanguage } from "../hooks/useLanguage";
-import { translations } from "../data/translations";
 import CaseStudy from "./CaseStudy";
 import SectionHeading from "./ui/SectionHeading";
 
@@ -21,8 +20,7 @@ function TechList({ items }) {
 }
 
 function Projects() {
-  const { language } = useLanguage();
-  const t = translations[language];
+  const { t } = useLanguage();
 
   const [isCaseStudyOpen, setIsCaseStudyOpen] = useState(
     () => window.location.hash === "#estudo-farol",
