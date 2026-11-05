@@ -25,7 +25,7 @@ const en = {
     status: "Open to remote roles and projects",
     ctaProjects: "See projects",
     ctaWhatsapp: "Message me on WhatsApp",
-    ctaResume: "Download résumé",
+    ctaResume: "Download CV",
   },
   about: {
     eyebrow: "// ABOUT",
