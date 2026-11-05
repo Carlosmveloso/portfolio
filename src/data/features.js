@@ -1,1 +1,1 @@
-export const features = ["clean-code", "git-github", "teamwork"];
+export const features = ["producao", "front-back", "seo", "negocio"];

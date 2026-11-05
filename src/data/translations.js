@@ -1,281 +1,211 @@
-export const translations = {
-  pt: {
-    profile: {
-      role: "Desenvolvedor Front-end",
-      location: "João Pessoa, PB, Brasil",
-      area: "Front-end",
-      level: "Júnior",
-      availability: "Emprego, Freelancer e Projetos",
-    },
-    nav: {
-      home: "Início",
-      about: "Sobre",
-      skills: "Skills",
-      projects: "Projetos",
-      experience: "Experiência",
-      contact: "Contato",
-      menuLabel: "Menu principal",
-      openMenu: "Abrir menu",
-      closeMenu: "Fechar menu",
-      languageSwitch: "Switch to English",
-    },
-    hero: {
-      eyebrow: "// Desenvolvedor Front-end",
-      title: "Carlos Eduardo, desenvolvedor *front-end*",
-      support: "Transformando ideias em experiências digitais modernas e responsivas.",
-      status: "Disponível para novas oportunidades",
-      ctaProjects: "Ver projetos",
-      ctaWhatsapp: "Falar no WhatsApp",
-      ctaResume: "Baixar currículo",
-    },
-    about: {
-      eyebrow: "// Sobre",
-      title: "Quem é *Carlos Eduardo*",
-      paragraphs: ["Sou um desenvolvedor front-end em evolução, focado em criar interfaces modernas, responsivas e bem estruturadas usando React, JavaScript e Tailwind CSS. Pronto para novas oportunidades, freelancers e projetos reais."],
-      photoAlt: "Foto de Carlos Eduardo",
-      locationLabel: "Localização",
-      areaLabel: "Área",
-      levelLabel: "Nível",
-      availabilityLabel: "Disponibilidade",
-    },
-    skills: {
-      eyebrow: "// Skills",
-      title: "Tecnologias que *domino*",
-      categories: {
-        frontend: "Front-end",
-        backend: "Back-end",
-        versioning: "Versionamento",
-        tools: "Ferramentas",
+const pt = {
+  nav: {
+    home: "Início",
+    about: "Sobre",
+    skills: "Skills",
+    projects: "Projetos",
+    experience: "Trajetória",
+    contact: "Contato",
+    menuLabel: "Menu principal",
+    openMenu: "Abrir menu",
+    closeMenu: "Fechar menu",
+    languageSwitch: "Switch to English",
+  },
+  hero: {
+    eyebrow: "// DESENVOLVEDOR FRONT-END",
+    title: "Sites e plataformas em React para *negócios locais*.",
+    support:
+      "Criei e mantenho o Farol Pitimbu, plataforma com 97 negócios do litoral sul da Paraíba.",
+    status: "Disponível para vagas remotas e projetos",
+    ctaProjects: "Ver projetos",
+    ctaWhatsapp: "Falar no WhatsApp",
+    ctaResume: "Baixar currículo",
+  },
+  about: {
+    eyebrow: "// SOBRE",
+    title: "Quem está por trás do *código*.",
+    paragraphs: [
+      "Sou desenvolvedor front-end em João Pessoa. Trabalho com React, JavaScript e Tailwind CSS, com Supabase no back-end. Criei o Farol Pitimbu do zero e sigo evoluindo a plataforma com novas funções.",
+      "Sou formado em Análise e Desenvolvimento de Sistemas e Técnico em Programação Web (Senac), e curso Engenharia de Software. Busco vaga júnior remota e atendo negócios que precisam de um site que traga clientes.",
+    ],
+    photoAlt: "Foto em preto e branco de Carlos Eduardo",
+    cards: [
+      { label: "Localização", value: "João Pessoa, PB · Remoto" },
+      { label: "Área", value: "Front-end" },
+      { label: "Nível", value: "Júnior" },
+      { label: "Disponibilidade", value: "Emprego, freelance e projetos" },
+    ],
+  },
+  skills: {
+    eyebrow: "// SKILLS",
+    title: "O que eu uso para *entregar*.",
+    groups: {
+      frontend: {
+        title: "Front-end",
+        items: ["React", "JavaScript (ES6+)", "HTML", "CSS", "Tailwind CSS", "React Router", "Vite"],
       },
-    },
-    projects: {
-      eyebrow: "// Projetos",
-      title: "Alguns dos meus *trabalhos*",
-      viewProject: "Ver projeto",
-      code: "Código",
-      caseStudy: "Estudo de caso",
-      items: {
-        "farol-pitimbu": {
-          title: "Farol Pitimbu",
-          description:
-            "Nova versão da plataforma que reúne passeios, gastronomia, hospedagem e serviços locais de Pitimbu em um só lugar. Laboratório operacional da NortCity.",
-        },
-        clothing: {
-          title: "Clothing",
-          description:
-            "Projeto desenvolvido de forma colaborativa durante formação prática no Senac.",
-        },
+      backend: {
+        title: "Back-end e dados",
+        items: ["Supabase (Auth, Storage, PostgreSQL)", "Node.js (básico)"],
       },
-    },
-    experience: {
-      eyebrow: "// Trajetória",
-      title: "Minha *jornada*",
-      items: {
-        "unipe-ads": {
-          date: "2022",
-          text: "Início da minha jornada: Comecei o curso de Análise e Desenvolvimento de Sistemas na Unipê.",
-        },
-        "fabrica-software": {
-          date: "2024",
-          text: "Fábrica de Software: Participei da Fábrica de Software, desenvolvendo em equipe soluções reais para empresas, como um estágio.",
-        },
-        javascript: {
-          date: "2024",
-          text: "Aprofundamento em JavaScript: Depois da faculdade, escolhi focar em Front-end e JavaScript, complementando com um curso na Udemy e o curso de Programador Web no Senac (HTML, CSS, JavaScript, PHP e MySQL).",
-        },
-        projetos: {
-          date: "2025",
-          text: "Meus primeiros projetos: Período de colocar a mão na massa, desenvolvendo alguns projetos e aplicando tudo o que vinha aprendendo.",
-        },
-        "engenharia-software": {
-          date: "2026",
-          text: "Engenharia de Software: Iniciei o curso de Engenharia de Software na Unipê, aprofundando ainda mais meus conhecimentos.",
-        },
-        "busca-oportunidade": {
-          date: "2026",
-          text: "Em busca da próxima etapa: Agora em busca de uma oportunidade como estagiário ou desenvolvedor júnior para colocar em prática tudo o que aprendi.",
-        },
+      quality: {
+        title: "Qualidade",
+        items: ["SEO técnico", "Acessibilidade", "Performance", "Design responsivo"],
       },
-    },
-    differentiators: {
-      eyebrow: "// Diferenciais",
-      title: "Por que trabalhar *comigo*",
-      items: {
-        "clean-code": {
-          title: "Código limpo",
-          description:
-            "Componentes organizados, legíveis e fáceis de manter. Li o livro Clean Code e obtive grande conhecimento de como criar códigos organizados.",
-        },
-        "git-github": {
-          title: "Git e GitHub",
-          description: "Sempre fazendo meus projetos com versionamento",
-        },
-        teamwork: {
-          title: "Comunicação e trabalho em equipe",
-          description:
-            "Colaboro bem com design e produto, reporto progresso com clareza e me adapto facilmente a times multidisciplinares.",
-        },
+      tools: {
+        title: "Ferramentas",
+        items: ["Git e GitHub", "Vercel", "Figma", "Leaflet"],
       },
-    },
-    contact: {
-      eyebrow: "// Contato",
-      title: "Vamos *conversar*",
-      subtitle:
-        "Disponível para emprego, freelancer e projetos. Envie uma mensagem ou me encontre nas redes abaixo.",
-      formName: "Nome",
-      formNamePlaceholder: "Seu nome",
-      formEmail: "Email",
-      formEmailPlaceholder: "seu@email.com",
-      formMessage: "Mensagem",
-      formMessagePlaceholder: "Como posso ajudar?",
-      submit: "Enviar mensagem",
-      sending: "Enviando...",
-      newTab: "abre em nova aba",
-      successMessage: "Mensagem enviada com sucesso! Vou retornar em breve.",
-      errorMessage: "Erro ao enviar mensagem. Tente novamente mais tarde.",
-    },
-    footer: {
-      tagline: "Desenvolvedor Front-end · João Pessoa, PB",
-      copyright: "© 2026 Carlos Eduardo",
+      ai: {
+        title: "IA no fluxo",
+        items: ["Claude", "ChatGPT", "Codex"],
+      },
+      learning: {
+        title: "Em evolução",
+        items: ["TypeScript", "Next.js", "Python"],
+      },
     },
   },
-  en: {
-    profile: {
-      role: "Front-end Developer",
-      location: "João Pessoa, PB, Brazil",
-      area: "Front-end",
-      level: "Junior",
-      availability: "Full-time, Freelance and Projects",
+  projects: {
+    eyebrow: "// PROJETOS",
+    title: "Projetos no *ar*.",
+    viewSite: "Ver site",
+    code: "Código",
+    caseStudy: "Estudo de caso",
+    closeCaseStudy: "Fechar estudo de caso",
+    farol: {
+      title: "Farol Pitimbu",
+      description:
+        "Guia digital do litoral sul da Paraíba. Reúne 97 negócios entre gastronomia, hospedagem, passeios e serviços, com cupons, mapa e painel para o dono do negócio. Primeira cidade do NortCity, que vai levar o modelo a outras cidades.",
+      mockupAlt: "Página inicial do Farol Pitimbu aberta em um celular",
     },
-    nav: {
-      home: "Home",
-      about: "About",
-      skills: "Skills",
-      projects: "Projects",
-      experience: "Experience",
-      contact: "Contact",
-      menuLabel: "Main menu",
-      openMenu: "Open menu",
-      closeMenu: "Close menu",
-      languageSwitch: "Mudar para português",
+    clothing: {
+      title: "Clothing",
+      // CONFIRMAR: acrescentar ao texto "Minha parte: <sua parte no projeto>."
+      description: "Loja virtual feita em equipe na formação do Senac.",
+      imageAlt: "Página inicial da loja virtual Clothing",
     },
-    hero: {
-      eyebrow: "// Front-end Developer",
-      title: "Carlos Eduardo, *front-end* developer",
-      support: "Turning ideas into modern and responsive digital experiences.",
-      status: "Available for new opportunities",
-      ctaProjects: "View projects",
-      ctaWhatsapp: "Message me on WhatsApp",
-      ctaResume: "Download resume",
+    upcomingTitle: "Em breve",
+    upcomingTag: "Em desenvolvimento",
+    upcoming: {
+      cardoni: { title: "Cardoni", description: "Site para barbearia." },
+      "vittorio-motori": { title: "Vittorio Motori", description: "Projeto da faculdade." },
     },
-    about: {
-      eyebrow: "// About",
-      title: "Who is *Carlos Eduardo*",
-      paragraphs: ["I'm a front-end developer in constant evolution, focused on building modern, responsive and well-structured interfaces using React, JavaScript and Tailwind CSS. Ready for new opportunities, freelance work and real projects."],
-      photoAlt: "Photo of Carlos Eduardo",
-      locationLabel: "Location",
-      areaLabel: "Area",
-      levelLabel: "Level",
-      availabilityLabel: "Availability",
-    },
-    skills: {
-      eyebrow: "// Skills",
-      title: "Technologies I *master*",
-      categories: {
-        frontend: "Front-end",
-        backend: "Back-end",
-        versioning: "Version Control",
-        tools: "Tools",
+    caseStudyContent: {
+      title: "Estudo de caso: Farol Pitimbu",
+      problemTitle: "Problema",
+      problem:
+        "Os negócios de Pitimbu (PB) tinham pouca presença on-line e o turista não achava as opções da cidade em um só lugar.",
+      solutionTitle: "Solução",
+      solution:
+        "Uma plataforma que reúne tudo e leva o visitante ao WhatsApp do negócio com um clique.",
+      builtTitle: "O que construí",
+      built: [
+        "Cadastro e login",
+        "Painel do dono do negócio",
+        "Painel administrativo com analytics próprio de visitas e cliques",
+        "Ofertas e cupons com validação por QR code",
+        "Mapa interativo (Leaflet + OpenStreetMap)",
+        "Busca por categoria e favoritos",
+        "SEO técnico, com sitemap de mais de 120 URLs",
+      ],
+      resultTitle: "Resultado",
+      result: "97 negócios cadastrados, no ar desde maio de 2025 e em evolução contínua.",
+      stackTitle: "Stack",
+      galleryTitle: "Galeria",
+      gallery: {
+        home: "Página inicial do Farol Pitimbu, com a busca e as categorias de negócios",
+        mapa: "Mapa interativo do Farol Pitimbu com os negócios marcados na cidade",
+        negocio: "Página de um negócio no Farol Pitimbu, com informações e botão de WhatsApp",
+        cupom: "Cupom de oferta do Farol Pitimbu com QR code para validação",
+        admin: "Painel administrativo do Farol Pitimbu com dados fictícios de visitas e cliques",
       },
     },
-    projects: {
-      eyebrow: "// Projects",
-      title: "Some of my *work*",
-      viewProject: "View project",
-      code: "Code",
-      caseStudy: "Case study",
-      items: {
-        "farol-pitimbu": {
-          title: "Farol Pitimbu",
-          description:
-            "New version of the platform that brings together tours, food, lodging and local services in Pitimbu in one place. NortCity's operational lab.",
-        },
-        clothing: {
-          title: "Clothing",
-          description: "Group project built during a course at Senac",
-        },
+  },
+  experience: {
+    eyebrow: "// TRAJETÓRIA",
+    title: "Minha *jornada*.",
+    items: {
+      "engenharia-software": {
+        date: "2026",
+        // CONFIRMAR: acrescentar ao texto ": <projeto atual>"
+        text: "Engenharia de Software (Unipê) e volta à Fábrica de Software",
+      },
+      "tecnico-conclusao": {
+        date: "mai/2026",
+        text: "Conclusão do Técnico em Programação Web (Senac)",
+      },
+      hackathon: {
+        date: "nov/2025",
+        text: "Hackathon Devs de Impacto (iMasters)",
+      },
+      "tecnico-inicio": {
+        date: "ago/2025",
+        text: "Início do Técnico em Programação Web (Senac)",
+      },
+      farol: {
+        date: "mai/2025",
+        text: "Criação do Farol Pitimbu",
+      },
+      "ads-conclusao": {
+        date: "dez/2024",
+        text: "Conclusão de Análise e Desenvolvimento de Sistemas (Unipê)",
+      },
+      "fabrica-software": {
+        date: "ago/2023",
+        text: "Fábrica de Software da Unipê: front-end do projeto Ponto de Coleta",
+      },
+      "ads-inicio": {
+        // CONFIRMAR: jan/2023 ou 2022 (mantido o valor que já estava no site)
+        date: "2022",
+        text: "Início de Análise e Desenvolvimento de Sistemas (Unipê)",
       },
     },
-    experience: {
-      eyebrow: "// Journey",
-      title: "My *journey*",
-      items: {
-        "unipe-ads": {
-          date: "2022",
-          text: "The start of my journey: Started my degree in Systems Analysis and Development at Unipê.",
-        },
-        "fabrica-software": {
-          date: "2024",
-          text: "Software Factory: Joined the Software Factory, building real solutions for companies in a team, similar to an internship.",
-        },
-        javascript: {
-          date: "2024",
-          text: "Diving deeper into JavaScript: After college, I chose to focus on Front-end and JavaScript, complementing it with a Udemy course and the Web Developer program at Senac (HTML, CSS, JavaScript, PHP and MySQL).",
-        },
-        projetos: {
-          date: "2025",
-          text: "My first projects: A hands-on period, building several projects and applying everything I had been learning.",
-        },
-        "engenharia-software": {
-          date: "2026",
-          text: "Software Engineering: Started a degree in Software Engineering at Unipê, deepening my knowledge even further.",
-        },
-        "busca-oportunidade": {
-          date: "2026",
-          text: "Looking for the next step: Now looking for an opportunity as an intern or junior developer to put everything I've learned into practice.",
-        },
+  },
+  differentiators: {
+    eyebrow: "// DIFERENCIAIS",
+    title: "Por que trabalhar *comigo*.",
+    items: {
+      producao: {
+        title: "Projeto real em produção",
+        description: "Farol Pitimbu no ar desde 2025, com 97 negócios.",
+      },
+      "front-back": {
+        title: "Front e back",
+        description: "Interface em React e dados no Supabase.",
+      },
+      seo: {
+        title: "SEO e performance",
+        description: "Páginas prontas para o Google e carregamento rápido.",
+      },
+      negocio: {
+        title: "Falo com o dono do negócio",
+        description: "Transformo a necessidade do comerciante em tela funcional.",
       },
     },
-    differentiators: {
-      eyebrow: "// Why me",
-      title: "Why work *with me*",
-      items: {
-        "clean-code": {
-          title: "Clean code",
-          description:
-            "Organized, readable and easy-to-maintain components. I read Clean Code and gained a strong understanding of how to write organized code.",
-        },
-        "git-github": {
-          title: "Git & GitHub",
-          description: "Always version-controlling my projects",
-        },
-        teamwork: {
-          title: "Communication & teamwork",
-          description:
-            "I work well with design and product, report progress clearly, and adapt easily to cross-functional teams.",
-        },
-      },
-    },
-    contact: {
-      eyebrow: "// Contact",
-      title: "Let's *talk*",
-      subtitle:
-        "Available for full-time work, freelance and projects. Send a message or find me on the networks below.",
-      formName: "Name",
-      formNamePlaceholder: "Your name",
-      formEmail: "Email",
-      formEmailPlaceholder: "you@email.com",
-      formMessage: "Message",
-      formMessagePlaceholder: "How can I help?",
-      submit: "Send message",
-      sending: "Sending...",
-      newTab: "opens in a new tab",
-      successMessage: "Message sent successfully! I'll get back to you soon.",
-      errorMessage: "Error sending message. Please try again later.",
-    },
-    footer: {
-      tagline: "Front-end Developer · João Pessoa, PB, Brazil",
-      copyright: "© 2026 Carlos Eduardo",
-    },
+  },
+  contact: {
+    eyebrow: "// CONTATO",
+    title: "Vamos *conversar*.",
+    subtitle: "Disponível para vagas remotas (Brasil e exterior), freelance e projetos.",
+    emailLabel: "E-mail",
+    formName: "Nome",
+    formNamePlaceholder: "Seu nome",
+    formEmail: "E-mail",
+    formEmailPlaceholder: "seu@email.com",
+    formMessage: "Mensagem",
+    formMessagePlaceholder: "Como posso ajudar?",
+    submit: "Enviar mensagem",
+    sending: "Enviando...",
+    newTab: "abre em nova aba",
+    successMessage: "Mensagem enviada com sucesso! Vou retornar em breve.",
+    errorMessage: "Erro ao enviar mensagem. Tente novamente mais tarde.",
+  },
+  footer: {
+    tagline: "Desenvolvedor Front-end · João Pessoa, PB",
+    copyright: "© 2026 Carlos Eduardo",
   },
 };
+
+// A versão em inglês entra na Fase 4.
+export const translations = { pt, en: pt };

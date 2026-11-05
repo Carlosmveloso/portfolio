@@ -14,17 +14,18 @@ import { useLanguage } from "../hooks/useLanguage";
 import { translations } from "../data/translations";
 import SectionHeading from "./ui/SectionHeading";
 
-const socialLinks = [
-  { icon: GithubIcon, label: "GitHub", href: navigation.github },
-  { icon: LinkedinIcon, label: "LinkedIn", href: navigation.linkedin },
-  { icon: WhatsappIcon, label: "WhatsApp", href: navigation.whatsapp },
-  { icon: Mail, label: "Email", href: `mailto:${navigation.email}` },
-  { icon: InstagramIcon, label: "Instagram", href: navigation.instagram },
-];
-
 function Contact() {
   const { language } = useLanguage();
   const t = translations[language];
+
+  const contactLinks = [
+    { icon: WhatsappIcon, label: "WhatsApp", href: navigation.whatsapp },
+    { icon: Mail, label: t.contact.emailLabel, href: `mailto:${navigation.email}` },
+    { icon: LinkedinIcon, label: "LinkedIn", href: navigation.linkedin },
+    { icon: GithubIcon, label: "GitHub", href: navigation.github },
+    { icon: InstagramIcon, label: "Instagram", href: navigation.instagram },
+  ];
+
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
   const [feedback, setFeedback] = useState(null);
@@ -75,7 +76,7 @@ function Contact() {
           <div>
             <p className="max-w-xl text-lg text-texto-suave">{t.contact.subtitle}</p>
             <ul className="mt-8 max-w-md">
-              {socialLinks.map(({ icon: Icon, label, href }) => {
+              {contactLinks.map(({ icon: Icon, label, href }) => {
                 const isExternal = href.startsWith("http");
                 return (
                   <li key={label} className="border-t-2 border-linha">

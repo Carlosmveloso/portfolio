@@ -1,8 +1,11 @@
+// Do mais recente para o mais antigo.
 export const timelineItems = [
-  "unipe-ads",
-  "fabrica-software",
-  "javascript",
-  "projetos",
   "engenharia-software",
-  "busca-oportunidade",
+  "tecnico-conclusao",
+  "hackathon",
+  "tecnico-inicio",
+  "farol",
+  "ads-conclusao",
+  "fabrica-software",
+  "ads-inicio",
 ];
