@@ -5,6 +5,7 @@ const en = {
       "Front-end developer in João Pessoa, Brazil. Websites and platforms in React for local businesses. Creator of Farol Pitimbu.",
   },
   nav: {
+    skip: "Skip to content",
     home: "Home",
     about: "About",
     skills: "Skills",

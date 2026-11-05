@@ -5,6 +5,7 @@ const pt = {
       "Desenvolvedor front-end em João Pessoa. Sites e plataformas em React para negócios locais. Criador do Farol Pitimbu.",
   },
   nav: {
+    skip: "Pular para o conteúdo",
     home: "Início",
     about: "Sobre",
     skills: "Skills",
