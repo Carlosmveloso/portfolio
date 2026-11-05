@@ -1,52 +1,28 @@
 import { skills } from "../data/skills";
 import { useLanguage } from "../hooks/useLanguage";
 import { translations } from "../data/translations";
-import Eyebrow from "./ui/Eyebrow";
+import SectionHeading from "./ui/SectionHeading";
 
 function Skills() {
   const { language } = useLanguage();
   const t = translations[language];
 
   return (
-    <section id="skills" className="relative px-5 py-24">
-      <div className="mx-auto max-w-5xl">
-        <div className="mb-12 text-center">
-          <Eyebrow>{t.skills.eyebrow}</Eyebrow>
-          <h2 className="mt-3 font-head text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            {t.skills.headingPrefix}{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              {t.skills.headingHighlight}
-            </span>
-          </h2>
-        </div>
+    <section id="skills" className="secao">
+      <div className="conteudo">
+        <SectionHeading eyebrow={t.skills.eyebrow} title={t.skills.title} />
 
-        <div className="grid gap-6 sm:grid-cols-2">
-          {skills.map(({ id, icon: Icon, items }) => (
-            <div
-              key={id}
-              className="rounded-3xl glass p-6 shadow-elegant transition-shadow hover:shadow-glow"
-            >
-              <div className="mb-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-primary shadow-glow">
-                  <Icon size={18} className="text-primary-foreground" />
-                </div>
-                <h3 className="font-head text-base font-semibold text-foreground">
-                  {t.skills.categories[id]}
-                </h3>
-              </div>
-              <div className="flex flex-wrap gap-2.5">
+        <div className="grid gap-x-10 gap-y-10 md:grid-cols-2">
+          {skills.map(({ id, items, learning }) => (
+            <div key={id} className="border-t-2 border-linha pt-5">
+              <h3 className="text-2xl">{t.skills.categories[id]}</h3>
+              <ul className="mt-4 flex flex-wrap gap-2">
                 {items.map((item) => (
-                  <span
-                    key={item}
-                    className="group relative cursor-default rounded-xl border border-border bg-card px-4 py-2 text-sm font-medium transition-all hover:-translate-y-0.5 hover:border-transparent"
-                  >
-                    <span className="absolute inset-0 -z-10 rounded-xl bg-gradient-primary opacity-0 transition-opacity group-hover:opacity-100" />
-                    <span className="relative text-foreground transition-colors group-hover:text-primary-foreground">
-                      {item}
-                    </span>
-                  </span>
+                  <li key={item} className={`etiqueta ${learning ? "text-texto-suave" : ""}`}>
+                    {item}
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>

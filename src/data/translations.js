@@ -6,7 +6,6 @@ export const translations = {
       area: "Front-end",
       level: "Júnior",
       availability: "Emprego, Freelancer e Projetos",
-      bio: "Sou um desenvolvedor front-end em evolução, focado em criar interfaces modernas, responsivas e bem estruturadas usando React, JavaScript e Tailwind CSS. Pronto para novas oportunidades, freelancers e projetos reais.",
     },
     nav: {
       home: "Início",
@@ -15,32 +14,33 @@ export const translations = {
       projects: "Projetos",
       experience: "Experiência",
       contact: "Contato",
-      contactCta: "Entrar em contato",
-      languageSwitchShort: "EN",
-      languageSwitchLong: "English",
+      menuLabel: "Menu principal",
+      openMenu: "Abrir menu",
+      closeMenu: "Fechar menu",
+      languageSwitch: "Switch to English",
     },
     hero: {
-      badge: "Disponível para novas oportunidades",
-      tagline:
-        "Transformando ideias em experiências digitais modernas e responsivas.",
+      eyebrow: "// Desenvolvedor Front-end",
+      title: "Carlos Eduardo, desenvolvedor *front-end*",
+      support: "Transformando ideias em experiências digitais modernas e responsivas.",
+      status: "Disponível para novas oportunidades",
       ctaProjects: "Ver projetos",
+      ctaWhatsapp: "Falar no WhatsApp",
       ctaResume: "Baixar currículo",
-      ctaContact: "Entrar em contato",
-      photoPlaceholder: "Sua foto aqui",
-      stackLabel: "Stack",
     },
     about: {
-      eyebrow: "Sobre mim",
-      headingPrefix: "Quem é",
+      eyebrow: "// Sobre",
+      title: "Quem é *Carlos Eduardo*",
+      paragraphs: ["Sou um desenvolvedor front-end em evolução, focado em criar interfaces modernas, responsivas e bem estruturadas usando React, JavaScript e Tailwind CSS. Pronto para novas oportunidades, freelancers e projetos reais."],
+      photoAlt: "Foto de Carlos Eduardo",
       locationLabel: "Localização",
       areaLabel: "Área",
       levelLabel: "Nível",
       availabilityLabel: "Disponibilidade",
     },
     skills: {
-      eyebrow: "Skills",
-      headingPrefix: "Tecnologias que",
-      headingHighlight: "domino",
+      eyebrow: "// Skills",
+      title: "Tecnologias que *domino*",
       categories: {
         frontend: "Front-end",
         backend: "Back-end",
@@ -49,9 +49,8 @@ export const translations = {
       },
     },
     projects: {
-      eyebrow: "Projetos",
-      headingPrefix: "Alguns dos meus",
-      headingHighlight: "trabalhos",
+      eyebrow: "// Projetos",
+      title: "Alguns dos meus *trabalhos*",
       viewProject: "Ver projeto",
       code: "Código",
       caseStudy: "Estudo de caso",
@@ -69,52 +68,38 @@ export const translations = {
       },
     },
     experience: {
-      eyebrow: "Experiência",
-      headingPrefix: "Minha",
-      headingHighlight: "jornada",
+      eyebrow: "// Trajetória",
+      title: "Minha *jornada*",
       items: {
         "unipe-ads": {
-          year: "2022",
-          title: "Início da minha jornada",
-          description:
-            "Comecei o curso de Análise e Desenvolvimento de Sistemas na Unipê.",
+          date: "2022",
+          text: "Início da minha jornada: Comecei o curso de Análise e Desenvolvimento de Sistemas na Unipê.",
         },
         "fabrica-software": {
-          year: "2024",
-          title: "Fábrica de Software",
-          description:
-            "Participei da Fábrica de Software, desenvolvendo em equipe soluções reais para empresas, como um estágio.",
+          date: "2024",
+          text: "Fábrica de Software: Participei da Fábrica de Software, desenvolvendo em equipe soluções reais para empresas, como um estágio.",
         },
         javascript: {
-          year: "2024",
-          title: "Aprofundamento em JavaScript",
-          description:
-            "Depois da faculdade, escolhi focar em Front-end e JavaScript, complementando com um curso na Udemy e o curso de Programador Web no Senac (HTML, CSS, JavaScript, PHP e MySQL).",
+          date: "2024",
+          text: "Aprofundamento em JavaScript: Depois da faculdade, escolhi focar em Front-end e JavaScript, complementando com um curso na Udemy e o curso de Programador Web no Senac (HTML, CSS, JavaScript, PHP e MySQL).",
         },
         projetos: {
-          year: "2025",
-          title: "Meus primeiros projetos",
-          description:
-            "Período de colocar a mão na massa, desenvolvendo alguns projetos e aplicando tudo o que vinha aprendendo.",
+          date: "2025",
+          text: "Meus primeiros projetos: Período de colocar a mão na massa, desenvolvendo alguns projetos e aplicando tudo o que vinha aprendendo.",
         },
         "engenharia-software": {
-          year: "2026",
-          title: "Engenharia de Software",
-          description:
-            "Iniciei o curso de Engenharia de Software na Unipê, aprofundando ainda mais meus conhecimentos.",
+          date: "2026",
+          text: "Engenharia de Software: Iniciei o curso de Engenharia de Software na Unipê, aprofundando ainda mais meus conhecimentos.",
         },
         "busca-oportunidade": {
-          year: "2026",
-          title: "Em busca da próxima etapa",
-          description:
-            "Agora em busca de uma oportunidade como estagiário ou desenvolvedor júnior para colocar em prática tudo o que aprendi.",
+          date: "2026",
+          text: "Em busca da próxima etapa: Agora em busca de uma oportunidade como estagiário ou desenvolvedor júnior para colocar em prática tudo o que aprendi.",
         },
       },
     },
     differentiators: {
-      eyebrow: "Diferenciais",
-      headingPrefix: "Por que trabalhar",
-      headingHighlight: "comigo",
+      eyebrow: "// Diferenciais",
+      title: "Por que trabalhar *comigo*",
       items: {
         "clean-code": {
           title: "Código limpo",
@@ -133,9 +118,8 @@ export const translations = {
       },
     },
     contact: {
-      eyebrow: "Contato",
-      headingPrefix: "Vamos",
-      headingHighlight: "conversar",
+      eyebrow: "// Contato",
+      title: "Vamos *conversar*",
       subtitle:
         "Disponível para emprego, freelancer e projetos. Envie uma mensagem ou me encontre nas redes abaixo.",
       formName: "Nome",
@@ -145,14 +129,14 @@ export const translations = {
       formMessage: "Mensagem",
       formMessagePlaceholder: "Como posso ajudar?",
       submit: "Enviar mensagem",
-      emailSubjectPrefix: "Contato via portfólio",
-      emailContactLabel: "Contato",
+      sending: "Enviando...",
+      newTab: "abre em nova aba",
       successMessage: "Mensagem enviada com sucesso! Vou retornar em breve.",
       errorMessage: "Erro ao enviar mensagem. Tente novamente mais tarde.",
     },
     footer: {
-      tagline: "Desenvolvedor Front-end focado em interfaces modernas e responsivas.",
-      builtWith: "Construído com React, Vite e Tailwind CSS.",
+      tagline: "Desenvolvedor Front-end · João Pessoa, PB",
+      copyright: "© 2026 Carlos Eduardo",
     },
   },
   en: {
@@ -162,7 +146,6 @@ export const translations = {
       area: "Front-end",
       level: "Junior",
       availability: "Full-time, Freelance and Projects",
-      bio: "I'm a front-end developer in constant evolution, focused on building modern, responsive and well-structured interfaces using React, JavaScript and Tailwind CSS. Ready for new opportunities, freelance work and real projects.",
     },
     nav: {
       home: "Home",
@@ -171,31 +154,33 @@ export const translations = {
       projects: "Projects",
       experience: "Experience",
       contact: "Contact",
-      contactCta: "Get in touch",
-      languageSwitchShort: "PT",
-      languageSwitchLong: "Português",
+      menuLabel: "Main menu",
+      openMenu: "Open menu",
+      closeMenu: "Close menu",
+      languageSwitch: "Mudar para português",
     },
     hero: {
-      badge: "Available for new opportunities",
-      tagline: "Turning ideas into modern and responsive digital experiences.",
+      eyebrow: "// Front-end Developer",
+      title: "Carlos Eduardo, *front-end* developer",
+      support: "Turning ideas into modern and responsive digital experiences.",
+      status: "Available for new opportunities",
       ctaProjects: "View projects",
+      ctaWhatsapp: "Message me on WhatsApp",
       ctaResume: "Download resume",
-      ctaContact: "Get in touch",
-      photoPlaceholder: "Your photo here",
-      stackLabel: "Stack",
     },
     about: {
-      eyebrow: "About me",
-      headingPrefix: "Who is",
+      eyebrow: "// About",
+      title: "Who is *Carlos Eduardo*",
+      paragraphs: ["I'm a front-end developer in constant evolution, focused on building modern, responsive and well-structured interfaces using React, JavaScript and Tailwind CSS. Ready for new opportunities, freelance work and real projects."],
+      photoAlt: "Photo of Carlos Eduardo",
       locationLabel: "Location",
       areaLabel: "Area",
       levelLabel: "Level",
       availabilityLabel: "Availability",
     },
     skills: {
-      eyebrow: "Skills",
-      headingPrefix: "Technologies I",
-      headingHighlight: "master",
+      eyebrow: "// Skills",
+      title: "Technologies I *master*",
       categories: {
         frontend: "Front-end",
         backend: "Back-end",
@@ -204,9 +189,8 @@ export const translations = {
       },
     },
     projects: {
-      eyebrow: "Projects",
-      headingPrefix: "Some of my",
-      headingHighlight: "work",
+      eyebrow: "// Projects",
+      title: "Some of my *work*",
       viewProject: "View project",
       code: "Code",
       caseStudy: "Case study",
@@ -223,52 +207,38 @@ export const translations = {
       },
     },
     experience: {
-      eyebrow: "Experience",
-      headingPrefix: "My",
-      headingHighlight: "journey",
+      eyebrow: "// Journey",
+      title: "My *journey*",
       items: {
         "unipe-ads": {
-          year: "2022",
-          title: "The start of my journey",
-          description:
-            "Started my degree in Systems Analysis and Development at Unipê.",
+          date: "2022",
+          text: "The start of my journey: Started my degree in Systems Analysis and Development at Unipê.",
         },
         "fabrica-software": {
-          year: "2024",
-          title: "Software Factory",
-          description:
-            "Joined the Software Factory, building real solutions for companies in a team, similar to an internship.",
+          date: "2024",
+          text: "Software Factory: Joined the Software Factory, building real solutions for companies in a team, similar to an internship.",
         },
         javascript: {
-          year: "2024",
-          title: "Diving deeper into JavaScript",
-          description:
-            "After college, I chose to focus on Front-end and JavaScript, complementing it with a Udemy course and the Web Developer program at Senac (HTML, CSS, JavaScript, PHP and MySQL).",
+          date: "2024",
+          text: "Diving deeper into JavaScript: After college, I chose to focus on Front-end and JavaScript, complementing it with a Udemy course and the Web Developer program at Senac (HTML, CSS, JavaScript, PHP and MySQL).",
         },
         projetos: {
-          year: "2025",
-          title: "My first projects",
-          description:
-            "A hands-on period, building several projects and applying everything I had been learning.",
+          date: "2025",
+          text: "My first projects: A hands-on period, building several projects and applying everything I had been learning.",
         },
         "engenharia-software": {
-          year: "2026",
-          title: "Software Engineering",
-          description:
-            "Started a degree in Software Engineering at Unipê, deepening my knowledge even further.",
+          date: "2026",
+          text: "Software Engineering: Started a degree in Software Engineering at Unipê, deepening my knowledge even further.",
         },
         "busca-oportunidade": {
-          year: "2026",
-          title: "Looking for the next step",
-          description:
-            "Now looking for an opportunity as an intern or junior developer to put everything I've learned into practice.",
+          date: "2026",
+          text: "Looking for the next step: Now looking for an opportunity as an intern or junior developer to put everything I've learned into practice.",
         },
       },
     },
     differentiators: {
-      eyebrow: "Differentiators",
-      headingPrefix: "Why work",
-      headingHighlight: "with me",
+      eyebrow: "// Why me",
+      title: "Why work *with me*",
       items: {
         "clean-code": {
           title: "Clean code",
@@ -287,9 +257,8 @@ export const translations = {
       },
     },
     contact: {
-      eyebrow: "Contact",
-      headingPrefix: "Let's",
-      headingHighlight: "talk",
+      eyebrow: "// Contact",
+      title: "Let's *talk*",
       subtitle:
         "Available for full-time work, freelance and projects. Send a message or find me on the networks below.",
       formName: "Name",
@@ -299,14 +268,14 @@ export const translations = {
       formMessage: "Message",
       formMessagePlaceholder: "How can I help?",
       submit: "Send message",
-      emailSubjectPrefix: "Portfolio contact",
-      emailContactLabel: "Contact",
+      sending: "Sending...",
+      newTab: "opens in a new tab",
       successMessage: "Message sent successfully! I'll get back to you soon.",
       errorMessage: "Error sending message. Please try again later.",
     },
     footer: {
-      tagline: "Front-end developer focused on modern, responsive interfaces.",
-      builtWith: "Built with React, Vite and Tailwind CSS.",
+      tagline: "Front-end Developer · João Pessoa, PB, Brazil",
+      copyright: "© 2026 Carlos Eduardo",
     },
   },
 };
