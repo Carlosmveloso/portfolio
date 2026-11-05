@@ -87,8 +87,8 @@ const pt = {
     },
     clothing: {
       title: "Clothing",
-      // CONFIRMAR: acrescentar ao texto "Minha parte: <sua parte no projeto>."
-      description: "Loja virtual feita em equipe na formação do Senac.",
+      description:
+        "Loja virtual feita em equipe na formação do Senac. Minha parte: atuei no front-end, no back-end e no banco de dados, e dei apoio técnico aos colegas com menos experiência.",
       imageAlt: "Página inicial da loja virtual Clothing",
     },
     upcomingTitle: "Em breve",
@@ -142,8 +142,7 @@ const pt = {
     items: {
       "engenharia-software": {
         date: "2026",
-        // CONFIRMAR: acrescentar ao texto ": <projeto atual>"
-        text: "Engenharia de Software (Unipê) e volta à Fábrica de Software",
+        text: "Engenharia de Software (Unipê) e volta à Fábrica de Software, no front-end do projeto Resus Sigris",
       },
       "tecnico-conclusao": {
         date: "mai/2026",

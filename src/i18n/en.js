@@ -87,8 +87,8 @@ const en = {
     },
     clothing: {
       title: "Clothing",
-      // CONFIRMAR: add "My part: <your part in the project>." to the text
-      description: "Online store built as a team during my Senac course.",
+      description:
+        "Online store built as a team during my Senac course. My part: I worked on the front end, back end and database, and supported less experienced teammates.",
       imageAlt: "Home page of the Clothing online store",
     },
     upcomingTitle: "Coming soon",
@@ -142,8 +142,7 @@ const en = {
     items: {
       "engenharia-software": {
         date: "2026",
-        // CONFIRMAR: add ": <current project>" to the text
-        text: "Software Engineering (Unipê) and back to the Software Factory",
+        text: "Software Engineering (Unipê) and back at the Software Factory, on the front end of the Resus Sigris project",
       },
       "tecnico-conclusao": {
         date: "May 2026",
