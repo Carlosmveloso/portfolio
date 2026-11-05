@@ -3,7 +3,7 @@ import { Mail } from "lucide-react";
 import { profile } from "../data/profile";
 import { navigation } from "../data/navigation";
 import { GithubIcon, LinkedinIcon, InstagramIcon } from "./icons/BrandIcons";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../hooks/useLanguage";
 import { translations } from "../data/translations";
 
 const socialLinks = [

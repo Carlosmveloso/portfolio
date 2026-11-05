@@ -10,7 +10,7 @@ import {
   InstagramIcon,
   WhatsappIcon,
 } from "./icons/BrandIcons";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../hooks/useLanguage";
 import { translations } from "../data/translations";
 import Eyebrow from "./ui/Eyebrow";
 

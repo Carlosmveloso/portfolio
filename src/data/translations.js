@@ -54,6 +54,7 @@ export const translations = {
       headingHighlight: "trabalhos",
       viewProject: "Ver projeto",
       code: "Código",
+      caseStudy: "Estudo de caso",
       items: {
         "farol-pitimbu": {
           title: "Farol Pitimbu",
@@ -119,18 +120,6 @@ export const translations = {
           title: "Código limpo",
           description:
             "Componentes organizados, legíveis e fáceis de manter. Li o livro Clean Code e obtive grande conhecimento de como criar códigos organizados.",
-        },
-        responsive: {
-          title: "Interfaces responsivas",
-          description: "Layouts que funcionam",
-        },
-        "user-focus": {
-          title: "Foco do usuário",
-          description: "Especializado em UX/UI",
-        },
-        "continuous-learning": {
-          title: "Aprendizado contínuo",
-          description: "Sempre estudando sobre...",
         },
         "git-github": {
           title: "Git e GitHub",
@@ -220,6 +209,7 @@ export const translations = {
       headingHighlight: "work",
       viewProject: "View project",
       code: "Code",
+      caseStudy: "Case study",
       items: {
         "farol-pitimbu": {
           title: "Farol Pitimbu",
@@ -284,18 +274,6 @@ export const translations = {
           title: "Clean code",
           description:
             "Organized, readable and easy-to-maintain components. I read Clean Code and gained a strong understanding of how to write organized code.",
-        },
-        responsive: {
-          title: "Responsive interfaces",
-          description: "Layouts that just work",
-        },
-        "user-focus": {
-          title: "User focus",
-          description: "Specialized in UX/UI",
-        },
-        "continuous-learning": {
-          title: "Continuous learning",
-          description: "Always studying...",
         },
         "git-github": {
           title: "Git & GitHub",

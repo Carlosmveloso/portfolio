@@ -2,7 +2,7 @@ import { ExternalLink } from "lucide-react";
 
 import { projects } from "../data/projects";
 import { GithubIcon } from "./icons/BrandIcons";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../hooks/useLanguage";
 import { translations } from "../data/translations";
 import Eyebrow from "./ui/Eyebrow";
 
@@ -64,14 +64,23 @@ function Projects() {
                     >
                       {t.projects.viewProject} <ExternalLink size={14} />
                     </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-colors hover:bg-muted-secundary"
-                    >
-                      <GithubIcon size={14} /> {t.projects.code}
-                    </a>
+                    {project.caseStudyUrl ? (
+                      <a
+                        href={project.caseStudyUrl}
+                        className="flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-colors hover:bg-muted-secundary"
+                      >
+                        {t.projects.caseStudy}
+                      </a>
+                    ) : (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-colors hover:bg-muted-secundary"
+                      >
+                        <GithubIcon size={14} /> {t.projects.code}
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

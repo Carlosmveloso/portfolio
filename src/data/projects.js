@@ -7,7 +7,7 @@ export const projects = [
     image: farolPitimbu,
     technologies: ["React", "Vite", "Tailwind CSS"],
     linkUrl: "https://farolpitimbu.com.br/",
-    githubUrl: "https://github.com/Carlosmveloso/nortcity",
+    caseStudyUrl: "#estudo-farol",
   },
   {
     id: "clothing",

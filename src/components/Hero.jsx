@@ -1,9 +1,8 @@
 import { ArrowRight, Download, Mail } from "lucide-react";
 
 import { profile } from "../data/profile";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../hooks/useLanguage";
 import { translations } from "../data/translations";
-import resumeFile from "../assets/files/Currículo - Carlos Eduardo 2026.pdf";
 import profilePhoto from "../assets/images/profile.jpeg";
 
 function Hero() {
@@ -59,8 +58,8 @@ function Hero() {
               </button>
               <a
                 className="flex gap-2 items-center px-5 py-3 text-sm font-semibold border border-border bg-card rounded-xl transition-colors hover:bg-muted-secundary"
-                href={resumeFile}
-                download="Curriculo - Carlos Eduardo.pdf"
+                href="/curriculo-carlos-eduardo.pdf"
+                download
               >
                 <Download size={16} /> {t.hero.ctaResume}
               </a>

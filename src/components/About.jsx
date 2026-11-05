@@ -1,7 +1,7 @@
 import { MapPin, Briefcase, GraduationCap, Send } from "lucide-react";
 
 import { profile } from "../data/profile";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../hooks/useLanguage";
 import { translations } from "../data/translations";
 import Eyebrow from "./ui/Eyebrow";
 

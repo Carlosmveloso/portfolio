@@ -1,7 +1,7 @@
 import { Sun, Menu, Moon, X, Languages } from "lucide-react";
 import { useState, useEffect } from "react";
 
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../hooks/useLanguage";
 import { translations } from "../data/translations";
 
 const sectionIds = ["home", "about", "skills", "projects", "experiences", "contact"];
