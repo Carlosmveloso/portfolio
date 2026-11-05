@@ -2,7 +2,10 @@ export const farol = {
   siteUrl: "https://farolpitimbu.com.br",
   mockup: "/projetos/farol/home.webp",
   technologies: ["React", "Vite", "Tailwind CSS", "Supabase", "Leaflet"],
-  gallery: ["home", "mapa", "negocio", "cupom", "admin"],
+  // TODO: quando os prints reais estiverem em public/projetos/farol/, devolver
+  // "mapa", "negocio", "cupom" e "admin" a esta lista. Os textos alternativos já
+  // existem em i18n (caseStudyContent.gallery) e o layout muda sozinho para a grade.
+  gallery: ["home"],
 };
 
 export const clothing = {

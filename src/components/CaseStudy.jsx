@@ -1,6 +1,9 @@
 import { farol } from "../data/projects";
 
 function CaseStudy({ content, closeLabel, isOpen, panelRef, onClose }) {
+  // Um print só de celular aparece inteiro; com vários, a galeria vira grade.
+  const isSingleImage = farol.gallery.length === 1;
+
   return (
     <section
       id="estudo-farol"
@@ -50,16 +53,22 @@ function CaseStudy({ content, closeLabel, isOpen, panelRef, onClose }) {
       </div>
 
       <h4 className="mt-10 text-xl">{content.galleryTitle}</h4>
-      <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <ul
+        className={
+          isSingleImage ? "mt-4 max-w-64" : "mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+        }
+      >
         {farol.gallery.map((name) => (
           <li key={name}>
             <img
               src={`/projetos/farol/${name}.webp`}
               alt={content.gallery[name]}
-              width="1200"
-              height="900"
+              width={isSingleImage ? 390 : 1200}
+              height={isSingleImage ? 844 : 900}
               loading="lazy"
-              className="aspect-[4/3] w-full rounded-md object-cover object-top"
+              className={`w-full rounded-md object-cover object-top ${
+                isSingleImage ? "aspect-[390/844]" : "aspect-[4/3]"
+              }`}
             />
           </li>
         ))}

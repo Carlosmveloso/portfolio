@@ -170,8 +170,7 @@ const en = {
         text: "Unipê Software Factory: front-end of the Ponto de Coleta project",
       },
       "ads-inicio": {
-        // CONFIRMAR: Jan 2023 or 2022 (kept the value already on the site)
-        date: "2022",
+        date: "Jan 2023",
         text: "Started my degree in Systems Analysis and Development (Unipê)",
       },
     },

@@ -170,8 +170,7 @@ const pt = {
         text: "Fábrica de Software da Unipê: front-end do projeto Ponto de Coleta",
       },
       "ads-inicio": {
-        // CONFIRMAR: jan/2023 ou 2022 (mantido o valor que já estava no site)
-        date: "2022",
+        date: "jan/2023",
         text: "Início de Análise e Desenvolvimento de Sistemas (Unipê)",
       },
     },
